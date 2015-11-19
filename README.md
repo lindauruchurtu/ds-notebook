@@ -3,7 +3,7 @@ data-science-docker-notebook
 
 An ipython notebook server for data science development
 
-## Philisophy
+## Philosophy
 
 The notebook is intended to contain the environment to perform development and anaysis. The data-only containers provide the source code (notebooks) and the data sources (data files, output, persistent caches, databases etc.. The notebook should therefore be **stateless**.
 
@@ -37,6 +37,14 @@ docker run \
 	--volumes-from data \
 	--volumes-from notebooks \
 	calvingiles/ds-notebook
+```
+
+### Starting the notebook
+
+Find the right ip address by typing in the terminal:
+
+```
+docker-machine ip default
 ```
 
 ### Automated docker builds
